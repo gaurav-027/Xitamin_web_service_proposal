@@ -12,7 +12,7 @@ const useFormSubmit = () => {
     setSuccess(false);
 
     try {
-      const apiUrl = 'https://xitamin-web-service-proposal.onrender.com' || 'http://localhost:6969';
+      const apiUrl = 'https://xitamin-web-service-proposal.onrender.com';
       await axios.post(`${apiUrl}/api/leads`, formData);
       setSuccess(true);
     } catch (err) {

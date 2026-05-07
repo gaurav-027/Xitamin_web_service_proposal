@@ -38,8 +38,6 @@ const submitLead = async (req, res, next) => {
       // Lead is already saved — just log the mail error, don't throw
     }
 
-    console.log("ok3");
-
     res.status(201).json({
       success: true,
       message: 'Your request has been received! We will contact you shortly.',

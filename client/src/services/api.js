@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://xitamin-web-service-proposal.onrender.com' || 'http://localhost:6969';
+const BASE_URL = 'https://xitamin-web-service-proposal.onrender.com';
 
 const api = axios.create({
   baseURL: BASE_URL,
