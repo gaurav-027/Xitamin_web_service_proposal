@@ -34,9 +34,11 @@ const submitLead = async (req, res, next) => {
     try {
       await sendNotification(lead);
     } catch (mailError) {
-      console.error('⚠️  Notification email failed:', mailError.message);
+      console.error('⚠️  Notification email failed:', mailError);
       // Lead is already saved — just log the mail error, don't throw
     }
+
+    console.log("ok3");
 
     res.status(201).json({
       success: true,

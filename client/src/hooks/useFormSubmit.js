@@ -12,7 +12,7 @@ const useFormSubmit = () => {
     setSuccess(false);
 
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || '';
+      const apiUrl = 'https://xitamin-web-service-proposal.onrender.com' || 'http://localhost:6969';
       await axios.post(`${apiUrl}/api/leads`, formData);
       setSuccess(true);
     } catch (err) {

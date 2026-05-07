@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'https://xitamin-web-service-proposal.onrender.com',
+        target: 'https://xitamin-web-service-proposal.onrender.com' || 'http://localhost:5000',
         changeOrigin: true,
       },
     },

@@ -1,4 +1,6 @@
 const transporter = require('../config/mailer');
+const dotenv = require('dotenv');
+dotenv.config();
 
 const sendNotification = async (leadData) => {
   const { fullName, email, phone, serviceRequirement, budget, projectType, message } = leadData;
@@ -74,7 +76,6 @@ const sendNotification = async (leadData) => {
       </html>
     `,
   };
-
   await transporter.sendMail(mailOptions);
 };
 
