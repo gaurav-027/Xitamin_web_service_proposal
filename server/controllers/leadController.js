@@ -31,12 +31,12 @@ const submitLead = async (req, res, next) => {
     });
 
     // Send admin notification email (non-blocking — don't fail if email fails)
-    try {
-      await sendNotification(lead);
-    } catch (mailError) {
-      console.error('⚠️  Notification email failed:', mailError);
-      // Lead is already saved — just log the mail error, don't throw
-    }
+    // try {
+    //   await sendNotification(lead);
+    // } catch (mailError) {
+    //   console.error('⚠️  Notification email failed:', mailError);
+    //   // Lead is already saved — just log the mail error, don't throw
+    // }
 
     res.status(201).json({
       success: true,
