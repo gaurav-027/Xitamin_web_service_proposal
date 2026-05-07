@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = import.meta.env.VITE_API_URL || '';
+const BASE_URL = 'https://xitamin-web-service-proposal.onrender.com';
 
 const api = axios.create({
   baseURL: BASE_URL,
