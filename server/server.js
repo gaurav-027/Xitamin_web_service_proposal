@@ -18,6 +18,10 @@ app.use(cors({
   methods: ['GET', 'POST'],
   credentials: true,
 }));
+
+
+
+app.options('*', cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -31,17 +35,6 @@ app.use('/api/leads', leadRoutes);
 
 // Global error handler (must be last)
 app.use(errorHandler);
-
-// const transporter = require('./config/mailer');
-
-// transporter.sendMail({
-//   from: process.env.MAIL_USER,
-//   to: process.env.MAIL_USER,
-//   subject: "Test Mail",
-//   text: "Mail working",
-// })
-// .then(() => console.log("✅ Test mail sent"))
-// .catch((err) => console.log("❌ Test mail failed", err));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
