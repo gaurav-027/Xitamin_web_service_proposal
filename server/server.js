@@ -32,7 +32,7 @@ app.use('/api/leads', leadRoutes);
 // Global error handler (must be last)
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 5000;
+const PORT = 'https://xitamin-web-service-proposal.onrender.com' || process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
 });
