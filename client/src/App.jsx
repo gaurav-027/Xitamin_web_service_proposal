@@ -108,6 +108,9 @@ const App = () => {
         <Navbar />
         <main>
           <Hero />
+          <About />
+          <Services />
+          <WorkProcess />
           <Pricing />
           <ContactForm />
           <Signature />
