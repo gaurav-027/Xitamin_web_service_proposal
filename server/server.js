@@ -14,7 +14,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin:  process.env.CLIENT_URL,
+  origin: 'https://xitamin-web-service-proposal-1.onrender.com',
   methods: ['GET', 'POST'],
   credentials: true,
 }));
