@@ -48,10 +48,11 @@ const Loader = ({ onComplete }) => {
       style={{ background: 'var(--bg)' }}
     >
       <div ref={textRef} className="text-center mb-8">
-        <div className="font-display font-black text-4xl tracking-[0.3em] gradient-text mb-2">XITAMIN</div>
-        <div className="font-mono text-xs tracking-[0.4em] text-[var(--muted)]">LOADING EXPERIENCE</div>
+        <div className="h-15 w-80">
+          <img className='h-full w-full' src="/whiteLogo.png" alt="" />
+        </div>
       </div>
-      <div className="w-48 h-px bg-[rgba(255,255,255,0.1)] rounded overflow-hidden">
+      <div className="w-80 h-px bg-[rgba(255,255,255,0.1)] rounded overflow-hidden">
         <div ref={barRef} className="h-full rounded" style={{ width: 0, background: 'linear-gradient(90deg, var(--accent), var(--accent3))' }} />
       </div>
     </div>
@@ -105,7 +106,7 @@ const App = () => {
 
       {/* Main site */}
       <div style={{ opacity: loaded ? 1 : 0, transition: 'opacity 0.3s' }}>
-        <Navbar />
+       <Navbar/>
         <main>
           <Hero />
           <About />

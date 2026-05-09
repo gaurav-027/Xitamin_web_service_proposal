@@ -39,7 +39,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#hero" className="font-display font-bold text-xl tracking-[0.2em]">
-          <span className="gradient-text">XITAMIN</span>
+          <div className="h-14 w-100 overflow-hidden rounded-md">
+            <img
+              className="w-full h-full object-contain"
+              src="/whiteLogo.png"
+              alt="Xitamin Logo"
+            />
+          </div>
         </a>
 
         {/* Desktop Links */}

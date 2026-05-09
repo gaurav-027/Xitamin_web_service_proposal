@@ -29,7 +29,9 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="font-display font-black text-2xl tracking-[0.3em] gradient-text mb-4">XITAMIN</div>
+            <div className="h-15 w-80 font-display font-black text-2xl tracking-[0.3em] gradient-text mb-4">
+              <img className='h-full w-full' src="/whiteLogo.png" alt="" />
+            </div>
             <p className="font-body text-sm text-[var(--muted)] leading-relaxed max-w-sm mb-6">
               Premium web development agency crafting futuristic digital experiences
               for businesses that demand the extraordinary.

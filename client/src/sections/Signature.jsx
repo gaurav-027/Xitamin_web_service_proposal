@@ -107,7 +107,7 @@ const Signature = () => {
       {/* Top border line */}
       <div
         className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent, rgba(0,200,255,0.3), rgba(123,94,167,0.3), transparent)' }}
+        style={{ background: 'linear-gradient(90deg, transparent, rgba(255, 145, 0, 0.35), rgba(123,94,167,0.3), transparent)' }}
       />
 
       {/* Mouse glow — initially hidden */}
@@ -117,7 +117,7 @@ const Signature = () => {
         style={{
           width: 600,
           height: 600,
-          background: 'radial-gradient(circle, rgba(0,200,255,0.12) 0%, rgba(123,94,167,0.06) 40%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(255, 145, 0, 0.35) 0%, rgba(123,94,167,0.06) 40%, transparent 70%)',
           willChange: 'transform',
         }}
       />
@@ -134,7 +134,7 @@ const Signature = () => {
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
-            WebkitTextStroke: '1px rgba(0,200,255,0.2)',
+            WebkitTextStroke: '1px rgba(255, 145, 0, 0.35)',
             willChange: 'transform',
             transformStyle: 'preserve-3d',
           }}

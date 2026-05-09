@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap');
 
 :root {
   --bg: #030609;
@@ -10,10 +9,10 @@
   --bg3: #0a1018;
   --text: #e8edf5;
   --muted: #6b7a8d;
-  --accent: #00c8ff;
-  --accent2: #7b5ea7;
+  --accent: #ff6200;
+  --accent2: #ff6200;
   --accent3: #00ffa3;
-  --glow: rgba(0, 200, 255, 0.15);
+  --glow: #ff6200;
   --glow2: rgba(123, 94, 167, 0.15);
   --border: rgba(255, 255, 255, 0.06);
 }
@@ -80,9 +79,8 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #00c8ff 0%, #7b5ea7 50%, #00ffa3 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+background: linear-gradient(135deg, #ff1744, #ff9100);
+-webkit-text-fill-color: transparent;
   background-clip: text;
 }
 

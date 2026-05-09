@@ -95,14 +95,14 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
         {/* Tag */}
-        <div ref={tagRef} className="inline-flex items-center gap-3 mb-8 opacity-0">
+        {/* <div ref={tagRef} className="inline-flex items-center gap-3 mb-8 opacity-0">
           <span className="w-10 h-px bg-[var(--accent)]" />
           <span className="font-mono text-xs tracking-[0.4em] text-[var(--accent)]">PREMIUM WEB DEVELOPMENT AGENCY</span>
           <span className="w-10 h-px bg-[var(--accent)]" />
-        </div>
+        </div> */}
 
         {/* Headline */}
-        <div className="overflow-hidden mb-3">
+        <div className="overflow-hidden mb-3 mt-20">
           <h1 ref={addToLineRefs} className="font-display font-black text-5xl md:text-7xl lg:text-8xl xl:text-9xl leading-none opacity-0">
             We Build
           </h1>
